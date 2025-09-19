@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Fondo -->
+  <div class="background"></div>
+
+  <!-- Loading -->
+  <div id="slide1" class="slide active">
+    <div class="loading-container">
+      <h1 class="loading-title">LOADING</h1>
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu principal -->
+  <div id="slide-2" class="slide">
+    <h1 class="titulo">Tic Tac Toe</h1>
+    <button class="btn jugador-vs-jugador">Jugador vs Jugador</button>
+    <button class="btn jugador-vs-cpu">Jugador vs CPU</button>
+  </div>
+
+  <!-- Jugador vs Jugador -->
+  <div id="slide-3" class="slide">
+    <div class="pvp-card">
+      <h1 class="h1-pvp">NOMBRAR JUGADORES</h1>
+      <form class="pvp-form">
+        <input type="text" placeholder="Jugador 1" class="input jugador1" required>
+        <input type="text" placeholder="Jugador 2" class="input jugador2" required>
+        <button type="button" class="iniciar iniciar-pvp">INICIAR</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Jugador vs CPU -->
+  <div id="slide-4" class="slide">
+    <div class="pvp-card">
+      <h1 class="h1-pvp">NOMBRAR JUGADOR</h1>
+      <form class="pvp-form">
+        <input type="text" placeholder="Jugador 1" class="input jugador1" required>
+        <button type="button" class="iniciar iniciar-cpu">INICIAR</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Juego -->
+  <div id="slide-5" class="slide">
+    <div class="game-topbar">
+      <button class="icon-btn back-btn" aria-label="Volver"></button>
+      <div class="versus">
+        <div class="badge p1">
+          <span class="player-caption" id="p1-name">Jugador 1</span>
+          <span class="badge-initials" id="p1-badge">J1</span>
+          <span class="mark x" title="X"></span>
+        </div>
+        <strong class="vs">VS</strong>
+        <div class="badge p2">
+          <span class="player-caption" id="p2-name">CPU</span>
+          <span class="badge-initials" id="p2-badge">CPU</span>
+          <span class="mark o" title="O"></span>
+        </div>
+      </div>
+      <button class="icon-btn reset-btn" aria-label="Reiniciar"></button>
+    </div>
+
+    <div class="game-card">
+      <div class="scoreboard">
+        <div class="col">
+          <div class="label" id="p1-short">J1</div>
+          <div class="sub" id="p1-wins">0 GANADAS</div>
+        </div>
+        <div class="col">
+          <div class="label" id="p2-short">CPU</div>
+          <div class="sub" id="p2-wins">0 GANADAS</div>
+        </div>
+        <div class="col empates">
+          <span class="balanza" aria-hidden="true"></span>
+          <div class="sub" id="empates">0 EMPATES</div>
+        </div>
+      </div>
+
+      <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Victoria/Derrota -->
+  <div id="victoria-modal" class="modal-victoria hidden">
+    <div class="modal-content">
+      <div class="modal-bg"></div>
+      <div class="modal-inner">
+        <div class="modal-trophy"></div>
+        <h2 class="victoria-text">VICTORIA</h2>
+        <p class="ganador-nombre" id="ganador-nombre">Jugador</p>
+
+        <div class="modal-score">
+          <div class="col">
+            <div class="label" id="modal-p1">JE</div>
+            <div class="sub" id="modal-p1-score">0 GANADAS</div>
+          </div>
+          <div class="col">
+            <div class="label" id="modal-p2">CPU</div>
+            <div class="sub" id="modal-p2-score">0 GANADAS</div>
+          </div>
+          <div class="col empates">
+            <span class="balanza"></span>
+            <div class="sub" id="modal-draws">0 EMPATES</div>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button id="btn-salir">SALIR</button>
+          <button id="btn-round">PRÓXIMO ROUND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Reinicio -->
+  <div id="reset-modal" class="modal-overlay hidden">
+    <div class="reset-box">
+      <div class="reset-bg"></div>
+      <div class="reset-inner">
+        <h3 class="reset-title">¿Seguro que desea<br>reiniciar la partida?</h3>
+        <div class="reset-actions">
+          <button id="reset-cancel" class="reset-btn cancel">CANCELAR</button>
+          <button id="reset-confirm" class="reset-btn confirm">REINICIAR PARTIDA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

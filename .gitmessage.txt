@@ -1,0 +1,13 @@
+<Asunto del commit>
+
+Explica QUÉ y POR QUÉ del cambio.
+Envuelve cada línea a ~72 caracteres.
+
+# Ejemplo:
+# Refactoriza estilos de botones
+#
+# Unifica molde visual de los botones de retroceso y reinicio.
+# Mejora consistencia en la topbar y evita conflictos con el modal.
+#
+# Resolves: #123
+# See also: #456

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="698" height="660" viewBox="0 0 698 660">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b1c8a"/>
+      <stop offset="1" stop-color="#021957"/>
+    </linearGradient>
+    <filter id="Rectangle_4003" x="0" y="0" width="698" height="634" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_4004" x="0" y="-1" width="698" height="466" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3712" x="0" y="0" width="698" height="660" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_4003)">
+        <rect id="Rectangle_4003-2" data-name="Rectangle 4003" width="680" height="616" rx="25" transform="translate(12192 8988)" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_4004)">
+        <rect id="Rectangle_4004-2" data-name="Rectangle 4004" width="680" height="448" rx="25" transform="translate(12192 8849)" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8f131"/>
+      <stop offset="1" stop-color="#ee9519"/>
+    </radialGradient>
+    <filter id="Ellipse_26" x="116.069" y="136.857" width="89.035" height="89.035" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_27" x="31.345" y="36.336" width="53.518" height="53.518" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_28" x="3.788" y="294.57" width="63.315" height="63.315" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_26-2" x="502.969" y="181.591" width="97.229" height="97.229" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_28-2" x="524.994" y="40.041" width="68.543" height="68.543" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_42604" data-name="Group 42604" transform="translate(-12183 -8982)">
+    <g transform="matrix(1, 0, 0, 1, 12183, 8982)" filter="url(#Rectangle_3712)">
+      <rect id="Rectangle_3712-2" data-name="Rectangle 3712" width="680" height="642" rx="25" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Mask_Group_2" data-name="Mask Group 2" clip-path="url(#clip-path)">
+      <g id="Group_42560" data-name="Group 42560" transform="translate(-2288.714 10372.515) rotate(-40)">
+        <g id="Polygon_1" data-name="Polygon 1" transform="matrix(1, 0.017, -0.017, 1, 12297.605, 8647.416)" fill="none">
+          <path d="M198.119,0l66.04,113.275L198.119,226.55H66.04L0,113.275,66.04,0Z" stroke="none"/>
+          <path d="M 71.78512573242188 10.00001525878906 L 11.57539367675781 113.2749710083008 L 71.78507995605469 216.5499267578125 L 192.3738708496094 216.5499267578125 L 252.5836029052734 113.2749710083008 L 192.3738708496094 10.00001525878906 L 71.78512573242188 10.00001525878906 M 66.03976440429688 1.52587890625e-05 L 198.1192321777344 1.52587890625e-05 L 264.1589965820312 113.2749710083008 L 198.1192321777344 226.5499267578125 L 66.03971862792969 226.5499267578125 L 0 113.2749710083008 L 66.03976440429688 1.52587890625e-05 Z" stroke="none" fill="#ff9e57"/>
+        </g>
+        <g id="Polygon_2" data-name="Polygon 2" transform="matrix(1, 0.017, -0.017, 1, 12252.106, 8606.996)" fill="none">
+          <path d="M267.414,0l89.138,152.895L267.414,305.789H89.138L0,152.895,89.138,0Z" stroke="none"/>
+          <path d="M 94.88348388671875 10 L 11.57534790039062 152.8946075439453 L 94.88348388671875 295.7892150878906 L 261.6691589355469 295.7892150878906 L 344.977294921875 152.8946075439453 L 261.6691589355469 10 L 94.88348388671875 10 M 89.13815307617188 0 L 267.4144897460938 0 L 356.5526428222656 152.8946075439453 L 267.4144897460938 305.7892150878906 L 89.13815307617188 305.7892150878906 L 0 152.8946075439453 L 89.13815307617188 0 Z" stroke="none" fill="#2285be"/>
+        </g>
+        <g id="Polygon_3" data-name="Polygon 3" transform="matrix(1, 0.017, -0.017, 1, 12339.423, 8684.198)" fill="none">
+          <path d="M134.44,0l44.813,77.229L134.44,154.457H44.813L0,77.229,44.813,0Z" stroke="none"/>
+          <path d="M 50.57212829589844 9.999984741210938 L 11.56158447265625 77.22872161865234 L 50.57209777832031 144.4574584960938 L 128.6806182861328 144.4574584960938 L 167.6911315917969 77.22872161865234 L 128.6806182861328 9.999984741210938 L 50.57212829589844 9.999984741210938 M 44.81318664550781 -1.52587890625e-05 L 134.4395599365234 -1.52587890625e-05 L 179.2527313232422 77.22872161865234 L 134.4395599365234 154.4574584960938 L 44.81315612792969 154.4574584960938 L -1.52587890625e-05 77.22872161865234 L 44.81318664550781 -1.52587890625e-05 Z" stroke="none" fill="#2285be"/>
+        </g>
+      </g>
+    </g>
+    <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(25064 18284) rotate(180)" clip-path="url(#clip-path-2)">
+      <g id="Group_42561" data-name="Group 42561" transform="translate(-2288.714 10372.515) rotate(-40)">
+        <g id="Polygon_4" data-name="Polygon 4" transform="matrix(1, 0.017, -0.017, 1, 12297.605, 8647.416)" fill="none">
+          <path d="M198.119,0l66.04,113.275L198.119,226.55H66.04L0,113.275,66.04,0Z" stroke="none"/>
+          <path d="M 71.78512573242188 10.00001525878906 L 11.57539367675781 113.2749710083008 L 71.78507995605469 216.5499267578125 L 192.3738708496094 216.5499267578125 L 252.5836029052734 113.2749710083008 L 192.3738708496094 10.00001525878906 L 71.78512573242188 10.00001525878906 M 66.03976440429688 1.52587890625e-05 L 198.1192321777344 1.52587890625e-05 L 264.1589965820312 113.2749710083008 L 198.1192321777344 226.5499267578125 L 66.03971862792969 226.5499267578125 L 0 113.2749710083008 L 66.03976440429688 1.52587890625e-05 Z" stroke="none" fill="#ff9e57"/>
+        </g>
+        <g id="Polygon_5" data-name="Polygon 5" transform="matrix(1, 0.017, -0.017, 1, 12252.106, 8606.996)" fill="none">
+          <path d="M267.414,0l89.138,152.895L267.414,305.789H89.138L0,152.895,89.138,0Z" stroke="none"/>
+          <path d="M 94.88348388671875 10 L 11.57534790039062 152.8946075439453 L 94.88348388671875 295.7892150878906 L 261.6691589355469 295.7892150878906 L 344.977294921875 152.8946075439453 L 261.6691589355469 10 L 94.88348388671875 10 M 89.13815307617188 0 L 267.4144897460938 0 L 356.5526428222656 152.8946075439453 L 267.4144897460938 305.7892150878906 L 89.13815307617188 305.7892150878906 L 0 152.8946075439453 L 89.13815307617188 0 Z" stroke="none" fill="#2285be"/>
+        </g>
+        <g id="Polygon_6" data-name="Polygon 6" transform="matrix(1, 0.017, -0.017, 1, 12339.423, 8684.198)" fill="none">
+          <path d="M134.44,0l44.813,77.229L134.44,154.457H44.813L0,77.229,44.813,0Z" stroke="none"/>
+          <path d="M 50.57212829589844 9.999984741210938 L 11.56158447265625 77.22872161865234 L 50.57209777832031 144.4574584960938 L 128.6806182861328 144.4574584960938 L 167.6911315917969 77.22872161865234 L 128.6806182861328 9.999984741210938 L 50.57212829589844 9.999984741210938 M 44.81318664550781 -1.52587890625e-05 L 134.4395599365234 -1.52587890625e-05 L 179.2527313232422 77.22872161865234 L 134.4395599365234 154.4574584960938 L 44.81315612792969 154.4574584960938 L -1.52587890625e-05 77.22872161865234 L 44.81318664550781 -1.52587890625e-05 Z" stroke="none" fill="#2285be"/>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 12183, 8982)" filter="url(#Ellipse_26)">
+      <circle id="Ellipse_26-3" data-name="Ellipse 26" cx="29" cy="29" r="29" transform="matrix(-0.97, 0.26, -0.26, -0.97, 196.1, 198.88)" fill="url(#radial-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 12183, 8982)" filter="url(#Ellipse_27)">
+      <circle id="Ellipse_27-2" data-name="Ellipse 27" cx="14.5" cy="14.5" r="14.5" transform="matrix(-0.97, 0.26, -0.26, -0.97, 75.86, 70.35)" fill="url(#radial-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 12183, 8982)" filter="url(#Ellipse_28)">
+      <circle id="Ellipse_28-3" data-name="Ellipse 28" cx="18.5" cy="18.5" r="18.5" transform="matrix(-0.97, 0.26, -0.26, -0.97, 58.1, 336.31)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Group_42558" data-name="Group 42558" transform="translate(19242.545 22991.982) rotate(-150)">
+      <g transform="matrix(-0.87, 0.5, -0.5, -0.87, 13118.74, 8603.23)" filter="url(#Ellipse_26-2)">
+        <circle id="Ellipse_26-4" data-name="Ellipse 26" cx="29" cy="29" r="29" transform="translate(562.2 266.82) rotate(-150)" fill="url(#radial-gradient)"/>
+      </g>
+      <g transform="matrix(-0.87, 0.5, -0.5, -0.87, 13118.74, 8603.23)" filter="url(#Ellipse_28-2)">
+        <circle id="Ellipse_28-4" data-name="Ellipse 28" cx="18.5" cy="18.5" r="18.5" transform="translate(566.04 96.58) rotate(-150)" fill="url(#radial-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

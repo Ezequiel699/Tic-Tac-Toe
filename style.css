@@ -1,0 +1,589 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Fondo */
+.background {
+  position: fixed;
+  inset: 0;
+  background-image: url(assets/imagenes/Back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Pantallas */
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+}
+
+.slide.active {
+  display: flex;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Carga */
+.loading-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 80%;
+  max-width: 600px;
+}
+
+.loading-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.loading-bar-container {
+  width: 100%;
+  height: 71px;
+  border: 4px solid #fff;
+  background: transparent;
+  overflow: hidden;
+}
+
+.loading-bar {
+  width: 0;
+  height: 100%;
+  background: #EE9200;
+}
+
+/* Portada */
+#slide-2 {
+  flex-direction: column;
+}
+
+#slide-2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .4);
+  z-index: 1;
+}
+
+#slide-2 .titulo,
+#slide-2 .btn {
+  position: relative;
+  z-index: 2;
+}
+
+#slide-2 .titulo {
+  text-align: center;
+  font: 400 69px/91px Roboto, sans-serif;
+  color: #fff;
+  margin: 0 0 60px;
+}
+
+/* Botones de inicio */
+#slide-2 .btn {
+  width: 511px;
+  height: 78px;
+  border: none;
+  border-radius: 12px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+/* Colores */
+#slide-2 .jugador-vs-jugador {
+  background: #808080;
+}
+
+#slide-2 .jugador-vs-cpu {
+  background: #2AB4FD;
+}
+
+/* Formulario jugadores */
+#slide-3,
+#slide-4 {
+  padding: 24px;
+}
+
+.pvp-card {
+  width: 495px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h1-pvp {
+  font: 800 42px/1 Roboto, sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+.pvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.input,
+.iniciar {
+  width: 495px;
+  height: 75px;
+  border-radius: 12px;
+}
+
+.input {
+  background: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  border: none;
+  padding: 0 18px;
+  font-size: 18px;
+}
+
+.iniciar {
+  background: #EF9519;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Juego */
+#slide-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* Barra superior */
+.game-topbar {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Botones */
+.icon-btn {
+  position: relative;
+  width: 67px;
+  height: 67px;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+/* Colores */
+.back-btn {
+  background-color: #EF9519;
+}
+
+.game-topbar .reset-btn {
+  background-color: #2AB4FD;
+  justify-self: end;
+}
+
+/* Íconos */
+.back-btn::after,
+.game-topbar .reset-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+}
+
+.back-btn::after {
+  -webkit-mask: url('assets/icons/Icon ionic-md-arrow-back.svg') no-repeat center / contain;
+  mask: url('assets/icons/Icon ionic-md-arrow-back.svg') no-repeat center / contain;
+}
+
+.game-topbar .reset-btn::after {
+  -webkit-mask: url('assets/icons/Icon ionic-md-refresh.svg') no-repeat center / contain;
+  mask: url('assets/icons/Icon ionic-md-refresh.svg') no-repeat center / contain;
+}
+
+/* Versus */
+.versus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  color: #fff;
+}
+
+.vs {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.badge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.player-caption {
+  color: #dfe7ff;
+  font: 700 14px/1 Roboto, sans-serif;
+  text-align: center;
+}
+
+.badge-initials {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: #26324d;
+  font: 700 18px/1 Roboto, sans-serif;
+  box-shadow: 0 2px 6px #00000029;
+  border: 3px solid #5f6a85;
+}
+
+.badge.p2 .badge-initials {
+  border-color: #2AB4FD;
+}
+
+.mark {
+  position: absolute;
+  bottom: -6px;
+  right: -10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px #00000029;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  outline: 3px solid #2AB4FD1A;
+}
+
+.mark.x {
+  background-image: url('assets/icons/Icon ionic-ios-close (3).svg');
+}
+
+.mark.o {
+  background-image: url('assets/icons/Path 6.svg');
+}
+
+/* Tarjeta del juego */
+.game-card {
+  margin: 0 auto;
+  width: min(560px, calc(100% - 40px));
+  background: linear-gradient(180deg, rgba(2, 14, 50, .92), rgba(2, 14, 50, .88));
+  border-radius: 20px;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+}
+
+/* Marcador */
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: end;
+}
+
+.scoreboard .label {
+  font: 700 22px/1 Roboto, sans-serif;
+  color: #fff;
+}
+
+.scoreboard .sub {
+  font: 500 14px/1.2 Roboto, sans-serif;
+  color: #fff;
+  opacity: .9;
+}
+
+.empates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.balanza {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background: transparent url('assets/icons/Icon map-lawyer.svg') center / contain no-repeat;
+}
+
+/* Tablero */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 124px);
+  grid-auto-rows: 124px;
+  gap: 16px;
+  justify-content: center;
+}
+
+.cell {
+  background: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+.cell.x {
+  background: #fff url('assets/icons/Icon ionic-ios-close (3).svg') center / 45% no-repeat;
+}
+
+.cell.o {
+  background: #fff url('assets/icons/Path 6.svg') center / 45% no-repeat;
+}
+
+/* Victoria */
+.modal-victoria {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal-victoria.hidden {
+  display: none;
+}
+
+.modal-victoria:not(.hidden) {
+  display: flex;
+}
+
+/* Resultado */
+.modal-content {
+  position: relative;
+  width: 680px;
+  height: 643px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.modal-bg {
+  position: absolute;
+  inset: 0;
+  background: url('assets/icons/Back.png') 0 0 / cover no-repeat;
+}
+
+.modal-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-trophy {
+  width: 140px;
+  height: 140px;
+  background: url('assets/icons/Group 42539.svg') center / contain no-repeat;
+  margin-top: 16px;
+}
+
+.victoria-text {
+  font: 900 48px/63px Roboto, sans-serif;
+  margin: 0;
+}
+
+.ganador-nombre {
+  font: 300 31px/40px Roboto, sans-serif;
+  margin: -6px 0 6px;
+}
+
+/* Puntuación */
+.modal-score {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.modal-score .label {
+  font: bold 43px/57px Roboto, sans-serif;
+}
+
+.modal-score .sub {
+  font: 500 22px/29px Roboto, sans-serif;
+  opacity: .95;
+}
+
+/* Acciones */
+.modal-actions {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
+#btn-salir,
+#btn-round {
+  width: 225px;
+  height: 74px;
+  border: none;
+  border-radius: 15px;
+  font: bold 22px/29px Roboto, sans-serif;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#btn-salir {
+  background: #EF9519;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+#btn-round {
+  background: #2AB4FD;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+/* Reinicio */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .6);
+  z-index: 1100;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-overlay:not(.hidden) {
+  display: flex;
+}
+
+/* Caja reinicio */
+.reset-box {
+  position: relative;
+  width: 560px;
+  height: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.reset-bg {
+  position: absolute;
+  inset: 0;
+  background: url("assets/icons/Group%2042604%20(1).svg") center / cover no-repeat;
+}
+
+.reset-inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.reset-title {
+  margin: 0;
+  font: 400 36px/48px Roboto, sans-serif;
+  color: #fff;
+}
+
+/* Controles reinicio */
+.reset-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.reset-actions .reset-btn {
+  width: 210px;
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font: bold 16px/1 Roboto, sans-serif;
+  cursor: pointer;
+}
+
+/* Colores */
+.reset-actions .reset-btn.cancel {
+  background: #EF9519;
+}
+
+.reset-actions .reset-btn.confirm {
+  background: #2AB4FD;
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+  .board {
+    grid-template-columns: repeat(3, 90px);
+    grid-auto-rows: 90px;
+  }
+
+  .game-card {
+    width: calc(100% - 32px);
+  }
+
+  .modal-content {
+    width: 92vw;
+    height: 82vh;
+  }
+
+  .reset-box {
+    width: 92vw;
+    height: 280px;
+  }
+}

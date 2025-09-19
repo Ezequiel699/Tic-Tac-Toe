@@ -1,6 +1,7 @@
 #Tic tac toe. Juego en HTML + CSS + JavaScript
 
-##Modos de juego
+##Modos de juego:
+
 -Jugador VS CPU: Jugador 1 juega con x y la cpu responde con movimientos aleatorios en casillas libres. 
 -Jugador 1 VS jugadror 2: ambos se turan entre x/o.
 
@@ -30,4 +31,5 @@ Opción 2 -VS CODE (via live server):
 2. Ve a extensiones y descarga live server. 
 3. Clic den index.html 
 4. Open with live server
+
 
